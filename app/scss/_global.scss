@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.fio-btn {
+    background-color: #5A225F;
+    width: 240px;
+    height: 95px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
