@@ -52,6 +52,7 @@
 //header end
 //top start
 .top {
+    padding: 112px 0;
     height: 90vh;
     background-image: url(../images/top-bg.jpg);
     background-repeat: no-repeat;
@@ -59,11 +60,14 @@
     background-size: cover;
     position: relative;
     &__inner {
-        padding: 65px 87px 25px 14.6%;
-        top: 15%;
-        position: absolute;
+        padding: 65px 150px 25px 0;
         background: linear-gradient(90deg, rgba(95, 29, 122, 0.3) 83.91%, rgba(95, 29, 122, 0) 101.42%);
         backdrop-filter: blur(8px);
+        width: 63%;
+    }
+    &__wrapper {
+        width: max-content;
+        margin-left: auto;
     }
     &__title {
         font-size: 40px;
@@ -95,6 +99,88 @@
     }
     .top__button+.top__button {
         margin-left: 20px;
+    }
+}
+
+.proposition {
+    background-image: url(../images/proposition-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 100px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__questions {
+        width: 50%;
+        padding: 45px 33px 45px 65px;
+    }
+    &__question {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #5F1D7A;
+        position: relative;
+        &+& {
+            margin-top: 30px;
+            &::before {
+                top: 40px;
+            }
+        }
+        &::before {
+            content: '';
+            background-image: url(../images/check.svg);
+            width: 37px;
+            height: 33px;
+            position: absolute;
+            left: -65px;
+            top: 0;
+        }
+    }
+    &__articles {
+        width: 50%;
+        background: rgba(95, 29, 122, 0.7);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        padding: 47px 70px;
+    }
+    &__article {
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        &+& {
+            margin-top: 30px;
+        }
+        span {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.products {
+    padding: 90px 0;
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+        text-transform: uppercase;
+        color: #5F1D7A;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        text-align: center;
     }
 }
 
