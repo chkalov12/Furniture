@@ -40,7 +40,7 @@
         margin-left: 81px;
     }
     &__phone {
-        color: #5F1D7A;
+        color: $fio;
         display: block;
         font-weight: 600;
         &+& {
@@ -74,7 +74,7 @@
         line-height: 54px;
         text-transform: uppercase;
         font-weight: 700;
-        color: $fio;
+        color: #3C184A;
         max-width: 693px;
         margin-bottom: 35px;
     }
@@ -91,23 +91,25 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: #1B0723;
-        margin: 0 0 15px 120px;
+        margin: 0 0 15px 125px;
         font-weight: 700;
     }
     &__button-box {
         display: flex;
     }
-    .top__button+.top__button {
-        margin-left: 20px;
-    }
+}
+
+.top__button+.top__button {
+    margin-left: 20px;
 }
 
 .proposition {
     background-image: url(../images/proposition-bg.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
     background-size: cover;
+    background-position: center;
     padding: 100px 0;
+    background-attachment: fixed;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -122,7 +124,7 @@
         line-height: 40px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #5F1D7A;
+        color: $fio;
         position: relative;
         &+& {
             margin-top: 30px;
@@ -163,11 +165,6 @@
 .products {
     padding: 90px 0;
     &__title {
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 41px;
-        text-transform: uppercase;
-        color: #5F1D7A;
         text-align: center;
         margin-bottom: 50px;
     }
@@ -181,6 +178,58 @@
         line-height: 25px;
         color: #000000;
         text-align: center;
+    }
+}
+
+.place {
+    background-image: url(../images/place-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0 37px;
+    &__text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: $fio;
+        margin-bottom: 50px;
+    }
+    &__title {
+        letter-spacing: 0.05em;
+        font-weight: 700;
+    }
+}
+
+.benefits {
+    padding: 90px 0;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 154px;
+        text-align: center;
+        &:nth-child(2) {
+            img {
+                margin-left: 10px;
+            }
+        }
+    }
+    &__img {
+        background-color: $fio;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-left: 13px;
+    }
+    &__name {
+        color: #000;
     }
 }
 
