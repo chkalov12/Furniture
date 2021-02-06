@@ -1,20 +1,12 @@
-$(function(){
-	//  $('.header__btn').click(function(){
-	//  	$('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 15000);
-	//  	return false;
-  //    });
+$(function() {
+    $('.menu__btn').on('click', function() {
+        $('.menu__btn').toggleClass('menu__btn--active');
+        $('.header__menu').toggleClass('header__menu--active');
+    });
 
-
-     $('.header__btn').click(function(e){
-      e.preventDefault();
-      $('body, html').animate({ scrollTop: $('.form').offset().top }, 10000);
-      });
-
-    
-    $('.burger-btn').on('click', function(){
-        $('.menu__list').slideToggle();
-      });
-
-      new WOW().init();
+    $('.menu__link').on('click', function() {
+        $('.menu__btn').removeClass('menu__btn--active');
+        $('.header__menu').removeClass('header__menu--active');
+    });
 
 });
