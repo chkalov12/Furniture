@@ -104,8 +104,10 @@
 
 @media (max-width: 830px) {
     .header {
-        height: 110px;
         position: relative;
+        &__inner {
+            height: 90px;
+        }
         &__menu {
             background-color: rgba(#fff, .9);
             z-index: 5;
@@ -114,7 +116,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: 110px;
+            top: 90px;
             text-align: center;
             transition: all .5s;
             margin-left: auto;
